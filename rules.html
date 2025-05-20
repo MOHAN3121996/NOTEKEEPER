@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Rules</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="landing.html">Notes</a>
+    <a href="#" onclick="logoutUser()">Logout</a>
+  </nav>
+
+  <div class="container">
+    <h1>Quiz Rules</h1>
+    <ul>
+      <li>You will have only <strong>15 seconds</strong> per question.</li>
+      <li>Once you select your answer, it cannot be changed.</li>
+      <li>You cannot select any option once the time is up.</li>
+      <li>You cannot exit the quiz while playing.</li>
+      <li>You will earn points based on correct answers.</li>
+    </ul>
+    <div class="modal-actions">
+      <a href="quiz.html?start=true" class="btn" onclick="localStorage.setItem('currentQuestionIndex', '0')">Test Your Knowledge</a>
+      <a href="index.html" class="btn">Exit</a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

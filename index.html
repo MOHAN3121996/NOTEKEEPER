@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Notes Keeper</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+    <a href="register.html">Register</a>
+    <a href="login.html">Login</a>
+    <a href="#" onclick="logoutUser()">Logout</a>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Notes Keeper</h1>
+      <input type="text" id="search" placeholder="Search notes..."/>
+      <button onclick="toggleTheme()">Toggle Theme</button>
+      <button id="toggleSpeech" onclick="toggleSpeech()">Enable Text-to-Speech</button>
+      <button onclick="pauseSpeech()">Pause Speech</button>
+      <button onclick="resumeSpeech()">Resume Speech</button>
+      <label for="voiceSelect">Select Voice:</label>
+      <select id="voiceSelect">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+    </header>
+
+    <div class="note-form">
+      <input type="text" id="noteTitle" placeholder="Note Title"/>
+      <textarea id="noteBody" rows="3" placeholder="Note Body"></textarea>
+      <input type="file" id="noteFile" accept="image/*,.pdf,.doc,.docx,.txt"/>
+      <button onclick="addNote()">Add Note</button>
+      <button onclick="startSpeechToText()">Start Speech-to-Text</button>
+    </div>
+
+    <h2>Pinned Notes</h2>
+    <div id="pinnedNotes" class="notes-grid"></div>
+
+    <h2>Other Notes</h2>
+    <div id="notes" class="notes-grid"></div>
+  </div>
+
+  <script src="script.js"></script>
+  <script>
+    updateNavBar();
+  </script>
+</body>
+</html>

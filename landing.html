@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Notes Keeper - Your Modern Note Taking Solution</title>
+  <link rel="stylesheet" href="landing.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Ensure consistent button styling */
+    .modal-actions button {
+      background-color: var(--primary-color);
+      color: #fff;
+    }
+
+    .modal-actions button:hover {
+      background-color: var(--secondary-color);
+    }
+
+    .quiz-section {
+      text-align: center;
+      margin: 20px 0;
+    }
+
+    .start-quiz-button {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: var(--primary-color);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 1.2rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .start-quiz-button:hover {
+      background-color: var(--secondary-color);
+    }
+  </style>
+</head>
+<body>
+ 
+
+  <div class="hero-container">
+    <nav class="navbar">
+      <div class="logo">
+        <span class="logo-text">Notes Keeper</span>
+      </div>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="index.html" class="cta-button">Launch App</a>
+      </div>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1>Capture Your Ideas <span class="highlight">Effortlessly</span></h1>
+        <p>A modern, secure, and intuitive note-taking application designed to help you organize your thoughts and boost productivity.</p>
+        <div class="cta-buttons">
+          <a href="index.html" class="primary-button">Get Started</a>
+          <a href="#features" class="secondary-button">Learn More</a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="app-preview">
+          <img src="https://placehold.co/600x400/1e1e2f/dda853?text=Notes+Keeper" alt="Notes Keeper App Preview">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="features" class="features-section">
+    <h2>Why Choose <span class="highlight">Notes Keeper</span>?</h2>
+    <div class="features-grid">
+      <div class="feature-card">
+        <h3>Modern Note-Taking</h3>
+        <p>Capture and organize your thoughts with a clean and efficient interface.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Text-to-Speech</h3>
+        <p>Enable text-to-speech functionality to listen to your notes and selected answers.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Speech-to-Text</h3>
+        <p>Use speech recognition to quickly convert your spoken words into notes.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Quiz Functionality</h3>
+        <p>Test your knowledge with interactive quizzes and track your scores.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Secure Login</h3>
+        <p>Ensure your data is safe with secure login and registration features.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Dark Mode</h3>
+        <p>Switch to dark mode for a comfortable viewing experience at night.</p>
+      </div>
+      <div class="feature-card">
+        <h3>Reminders</h3>
+        <p>Set reminders for your important notes and never miss a deadline.</p>
+      </div>
+      <div class="feature-card">
+        <h3>File Attachments</h3>
+        <p>Attach files to your notes for better organization and accessibility.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="app-showcase">
+    <div class="showcase-content">
+      <h2>Streamlined for <span class="highlight">Productivity</span></h2>
+      <p>Notes Keeper combines a clean interface with powerful features to help you stay organized and focused.</p>
+      <ul class="showcase-features">
+        <li><i class="fas fa-check"></i> Intuitive user interface</li>
+        <li><i class="fas fa-check"></i> Fast note creation and editing</li>
+        <li><i class="fas fa-check"></i> Organize with pinning system</li>
+        <li><i class="fas fa-check"></i> Secure user accounts</li>
+      </ul>
+      <a href="index.html" class="primary-button">Try It Now</a>
+    </div>
+    <div class="showcase-image">
+      <img src="https://placehold.co/600x400/1e1e2f/dda853?text=App+Interface" alt="Notes Keeper Interface">
+    </div>
+  </section>
+
+  <div class="quiz-section">
+    <h2>Ready to Test Your Knowledge?</h2>
+    <a href="rules.html" class="start-quiz-button">Start Quiz</a>
+  </div>
+
+  <section id="subscribe" class="subscribe-section">
+    <h2>Stay Updated with <span class="highlight">Notes Keeper</span></h2>
+    <p>Subscribe to our newsletter to receive the latest updates, tips, and features directly in your inbox.</p>
+    <form id="subscribeForm" class="subscribe-form">
+      <input type="email" id="subscriberEmail" placeholder="Enter your email" required>
+      <button type="button" onclick="subscribeUser()">Subscribe</button>
+    </form>
+  </section>
+
+  <section id="about" class="about-section">
+    <h2>About <span class="highlight">Notes Keeper</span></h2>
+    <p>Notes Keeper was designed with modern users in mind. We understand the need for a clean, efficient, and secure note-taking solution that works across all your devices.</p>
+    <p>Our mission is to help you capture and organize your thoughts, ideas, and important information without the clutter and complexity of traditional note apps.</p>
+  </section>
+
+  <section id="faq" class="faq-section">
+    <h2>Frequently Asked <span class="highlight">Questions</span></h2>
+    <div class="faq-container">
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Is Notes Keeper free to use?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Yes, Notes Keeper is completely free to use with all features available to all users.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How secure are my notes?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Your notes are secured with user authentication. Only you can access your notes when logged into your account.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>Can I access my notes offline?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>Currently, Notes Keeper requires an internet connection to access your notes.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-question">
+          <h3>How do I export my notes?</h3>
+          <span class="faq-toggle"><i class="fas fa-plus"></i></span>
+        </div>
+        <div class="faq-answer">
+          <p>You can export your notes as text or PDF files using the export buttons in the navigation bar.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="user-dashboard" class="dashboard-section">
+    <h2>Welcome, <span id="userName">User</span>!</h2>
+    <div class="dashboard-content">
+      <p><strong>Notes Count:</strong> <span id="notesCount">0</span></p>
+      <p><strong>Last Login:</strong> <span id="lastLogin">N/A</span></p>
+      <button onclick="logoutUser()">Logout</button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <span class="logo-text">Notes Keeper</span>
+        <p>Your modern note-taking solution</p>
+      </div>
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <a href="#features">Features</a>
+        <a href="#about">About</a>
+        <a href="#faq">FAQ</a>
+        <a href="index.html">Launch App</a>
+      </div>
+      <div class="footer-newsletter">
+        <h3>Stay Updated</h3>
+        <p>Subscribe to our newsletter for updates and tips</p>
+        <div class="newsletter-form">
+          <input type="email" placeholder="Your email address" class="newsletter-input">
+          <button class="newsletter-button">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2023 Notes Keeper. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    updateNavBar();
+
+    // Mobile menu toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function() {
+      document.querySelector('.nav-links').classList.toggle('active');
+    });
+
+    // FAQ toggle
+    document.querySelectorAll('.faq-question').forEach(question => {
+      question.addEventListener('click', () => {
+        const faqItem = question.parentElement;
+        faqItem.classList.toggle('active');
+        
+        const icon = question.querySelector('.faq-toggle i');
+        if (faqItem.classList.contains('active')) {
+          icon.classList.remove('fa-plus');
+          icon.classList.add('fa-minus');
+        } else {
+          icon.classList.remove('fa-minus');
+          icon.classList.add('fa-plus');
+        }
+      });
+    });
+
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    document.addEventListener("DOMContentLoaded", () => {
+      const loggedInUser = JSON.parse(localStorage.getItem("loggedInUser"));
+      if (loggedInUser) {
+        document.getElementById("userName").textContent = loggedInUser.name || "User";
+        const notes = JSON.parse(localStorage.getItem("notes")) || [];
+        const userNotes = notes.filter(note => note.username === loggedInUser.username);
+        document.getElementById("notesCount").textContent = userNotes.length;
+        document.getElementById("lastLogin").textContent = loggedInUser.lastLogin || "N/A";
+      } else {
+        alert("Please log in to access the dashboard.");
+        window.location.href = "login.html";
+      }
+    });
+
+    function subscribeUser() {
+      const email = document.getElementById('subscriberEmail').value.trim();
+      if (!email) {
+        alert('Please enter a valid email address.');
+        return;
+      }
+      // Show a popup message for successful subscription
+      const popup = document.createElement('div');
+      popup.textContent = `Thank you for subscribing! Updates will be sent to ${email}.`;
+      popup.style.position = 'fixed';
+      popup.style.bottom = '20px';
+      popup.style.right = '20px';
+      popup.style.backgroundColor = '#4CAF50';
+      popup.style.color = 'white';
+      popup.style.padding = '10px 20px';
+      popup.style.borderRadius = '5px';
+      popup.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+      popup.style.zIndex = '1000';
+      document.body.appendChild(popup);
+
+      setTimeout(() => {
+        popup.remove();
+      }, 3000);
+
+      document.getElementById('subscribeForm').reset();
+    }
+  </script>
+</body>
+</html>

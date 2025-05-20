@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav-bar">
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section>
+    <div id="quizContainer" style="display: none;">
+      <div id="questionContainer">
+        <!-- Questions will be dynamically inserted here -->
+      </div>
+      <div class="modal-actions">
+        <button onclick="exitQuiz()">Exit Quiz</button>
+        <button onclick="nextQuestion()">Next</button>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+ <center><script src="questions.js"></script></center>
+  <script>
+    // Ensure the quiz container is visible when the quiz starts
+    document.addEventListener('DOMContentLoaded', () => {
+      const urlParams = new URLSearchParams(window.location.search);
+      if (urlParams.get('start') === 'true') {
+        document.getElementById('quizContainer').style.display = 'block';
+      }
+    });
+
+    // Function to exit the quiz
+    function exitQuiz() {
+      if (confirm('Are you sure you want to exit the quiz?')) {
+        window.location.href = 'index.html';
+      }
+    }
+  </script>
+</body>
+</html>
